@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Project from "../components/Project";
 import { motion, useMotionValue, useSpring } from "motion/react";
-import myProjects from "../constants";
+import { myProjects } from "../constants";
 const Projects = () => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);

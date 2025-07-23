@@ -1,7 +1,7 @@
 import { twMerge } from "tailwind-merge";
 import Marquee from "../components/Marquee";
 import { CircleUserRound } from "lucide-react";
-import reviews from "../constants";
+import { reviews } from "../constants";
 
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
