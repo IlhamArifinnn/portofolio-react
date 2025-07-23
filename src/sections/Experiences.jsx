@@ -1,5 +1,5 @@
-import { Timeline } from "../components/Timeline";
-import { experiences } from "../constants";
+import Timeline from "../components/Timeline";
+import experiences from "../constants";
 const Experiences = () => {
   return (
     <div className="w-full md:pt-1" id="experiences">
