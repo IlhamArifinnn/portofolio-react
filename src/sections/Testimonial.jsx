@@ -40,7 +40,7 @@ export default function Testimonial() {
   return (
     <div className="items-start mt-25 md:mt-35 c-space pt-22" id="testimonial">
       <h2 className="text-heading">Hear From My Friend</h2>
-      <p className="text-sm text-gray-100 italic">
+      <p className="text-sm text-gray-300 italic mt-1">
         This testimonial is still dummy dataThis testimonial is still dummy data
       </p>
       <div className="relative flex flex-col items-center justify-center w-full mt-12 overflow-hidden">
