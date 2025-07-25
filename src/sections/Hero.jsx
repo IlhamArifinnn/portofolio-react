@@ -39,8 +39,8 @@ const Hero = () => {
             <Environment preset="city" />
             <Float>
               <Robot
-                scale={isMobile ? 0.7 : 0.9}
-                position={isMobile ? [-0.2, -0.4, 0] : [1.3, -0.4, 0]}
+                scale={isMobile ? 0.7 : 0.8}
+                position={isMobile ? [-0.2, -0.4, 0] : [1.3, -0.1, 0]}
               />
             </Float>
             <Rig />
