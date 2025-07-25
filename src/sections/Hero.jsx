@@ -1,7 +1,8 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import HeroText from "../components/HeroText";
-import ParallaxBackground from "../components/parallaxBackground"
-import { Astronaut } from "../components/Astronaut";
+import ParallaxBackground from "../components/parallaxBackground";
+import { Robot } from "../components/Robot";
+import { Environment } from "@react-three/drei";
 import { Float } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import { easing } from "maath";
@@ -35,10 +36,11 @@ const Hero = () => {
       >
         <Canvas camera={{ position: [0, 1, 3] }}>
           <Suspense fallback={<Loader />}>
+            <Environment preset="city" />
             <Float>
-              <Astronaut
-                scale={isMobile && 0.23}
-                position={isMobile && [0, -1.5, 0]}
+              <Robot
+                scale={isMobile ? 0.7 : 0.9}
+                position={isMobile ? [-0.2, -0.4, 0] : [1.3, -0.4, 0]}
               />
             </Float>
             <Rig />

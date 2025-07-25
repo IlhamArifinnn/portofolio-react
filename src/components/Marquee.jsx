@@ -1,4 +1,5 @@
 import { twMerge } from "tailwind-merge";
+
 export default function Marquee({
   className,
   reverse = false,
